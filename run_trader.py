@@ -5,7 +5,7 @@ from vnpy.trader.ui import MainWindow, create_qapp
 from vnpy_ctp import CtpGateway
 
 from my_simplestrategy import SimpleStrategyApp
-
+from vnpy_ctabacktester import CtaBacktesterApp
 
 def main():
     """Start VeighNa Trader"""
@@ -16,6 +16,7 @@ def main():
 
     main_engine.add_gateway(CtpGateway)
     main_engine.add_app(SimpleStrategyApp)
+    main_engine.add_app(CtaBacktesterApp)
 
     main_window = MainWindow(main_engine, event_engine)
     main_window.showMaximized()

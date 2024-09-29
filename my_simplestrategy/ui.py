@@ -93,7 +93,7 @@ class StrategyMonitor(QtWidgets.QTableWidget):
         self.setColumnCount(len(labels))
         self.setHorizontalHeaderLabels(labels)      # 水平表头文字
         self.verticalHeader().setVisible(False)     # 垂直表头隐藏
-        self.setEditTriggers(self.NoEditTriggers)   # 禁止内容编辑
+        self.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)   # 禁止内容编辑
 
         self.rows: dict[str, dict[str, QtWidgets.QTableWidgetItem]] = {}
 
