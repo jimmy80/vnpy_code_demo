@@ -1,2 +1,5 @@
 # code_demo
-源码解析小班课
+
+部分 NoEditTriggers 需要更换为： QtWidgets.QTableWidget.NoEditTriggers
+
+
